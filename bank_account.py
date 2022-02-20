@@ -27,10 +27,10 @@ class Bankaccount:
         for account in cls.accounts:
             account.display_account_info()
 
-ron = Bankaccount(.02, 100)
-cassidy = Bankaccount(.03, 500)
+savings = Bankaccount(.02, 100)
+checking = Bankaccount(.03, 500)
 
-ron.deposit(100).deposit(50).deposit(325).withdraw(150).yield_interest().display_account_info()
-cassidy.deposit(500).deposit(50).withdraw(200).withdraw(100).withdraw(25).withdraw(255).yield_interest().display_account_info()
+savings.deposit(100).deposit(50).deposit(325).withdraw(150).yield_interest().display_account_info()
+checking.deposit(500).deposit(50).withdraw(200).withdraw(100).withdraw(25).withdraw(255).yield_interest().display_account_info()
 
 Bankaccount.print_accounts()
